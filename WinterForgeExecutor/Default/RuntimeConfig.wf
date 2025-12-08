@@ -1,5 +1,4 @@
 RuntimeConfig : global config {
-	MainScript = "Main";
-	GracefulErrors = false;	
+		MainScript = "Main";
 }
 return config;

@@ -1,0 +1,27 @@
+#import "Warrior" as W
+#import "Mage" as M
+#import "Rogue" as R
+
+Random : rand;
+var choice = rand->Next(0, 3);
+
+Warrior : warrior;
+Mage : mage;
+Rogue : rogue;
+
+var character;
+
+if choice == 0 
+	character = warrior;
+else if choice == 1 
+	character = mage;
+else 
+	character = rogue;
+
+Console->WriteLine("Character generated:");
+Console->WriteLine(string->Concat("HP: ", character->HP));
+Console->WriteLine(string->Concat("Mana: ", character->Mana));
+Console->WriteLine(string->Concat("Strength: ", character->Strength));
+Console->WriteLine(string->Concat("Agility: ", character->Agility));
+Console->WriteLine(string->Concat("Intelligence: ", character->Intelligence));
+Console->ReadLine();

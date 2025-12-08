@@ -1,0 +1,12 @@
+﻿#container Mage
+{
+    #variables
+    {
+        HP = 60;
+        Mana = 100;
+        Strength = 5;
+        Agility = 8;
+        Intelligence = 18;
+    }
+}
+return Mage;

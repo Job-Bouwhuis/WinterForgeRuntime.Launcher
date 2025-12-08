@@ -9,17 +9,31 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="RuntimeConfig.wf" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Main.wf" />
-    <EmbeddedResource Include="RuntimeConfig.wf" />
+    <EmbeddedResource Include="Default\Main.wf" />
+    <EmbeddedResource Include="Default\RuntimeConfig.wf" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\WinterRose-Development\WinterRose.Recordium\WinterRose.Recordium.csproj" />
     <ProjectReference Include="..\..\WinterRose.WinterForge\src\WinterRose.WinterForge\WinterRose.WinterForge.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="RuntimeConfig.wf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Scripts\Mage.wf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Scripts\Main.wf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Scripts\Rogue.wf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Scripts\warrior.wf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
