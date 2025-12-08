@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="../WinterRose-Development/WinterRose.Recordium/WinterRose.Recordium.csproj" />
+  <Project Path="../WinterRose.WinterForge/src/WinterRose.WinterForge/WinterRose.WinterForge.csproj" />
+  <Project Path="WinterForgeExecutor/WinterForge,RuntimeLauncher.csproj" />
+</Solution>

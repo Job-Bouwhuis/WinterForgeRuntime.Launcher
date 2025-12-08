@@ -1,0 +1,4 @@
+RuntimeConfig : global config {
+		MainScript = "Main";
+}
+return config;
