@@ -31,7 +31,7 @@ public static class Popup
     {
         try
         {
-            Process.Start("zenity", $"--info --title=\"{TITLE}\" --text=\"{Escape(message)}\"");
+            Process.Start("kdialog", $"--msgbox \"{Escape(message)}\" --title \"{TITLE}\"");
         }
         catch
         {

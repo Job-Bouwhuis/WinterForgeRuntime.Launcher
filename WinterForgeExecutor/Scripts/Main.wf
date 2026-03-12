@@ -1,10 +1,1 @@
-// Welcome to this challenge. You know a lot about sockets now, but it is my goal to extend you knowledge further. 
-// Please note that this (and further) responses are encoded in UTF-8 encoding. In order to continue this challenge you have to send the 
-// following bytes to the server: 0x50 0x39 0xa1. Be advised that you should send these values as raw bytes, not ASCII characters. 
-// The challenge will continue when you do that. You can solve this challenge using a Java program, but you are allowed to use any 
-// tool/language/website your want.
-
-Socket(SocketType.Stream, ProtocolType.Tcp) : socket;
-
-var bytes = <byte>[80, 57, 161]
-
+Popup->Show("Test");

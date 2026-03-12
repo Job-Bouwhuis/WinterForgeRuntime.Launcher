@@ -6,7 +6,7 @@ using WinterRose.WinterForgeSerializing;
 const string CONFIG_FILE = "RuntimeConfig.wf";
 const string COMPILED_EXTENSION = ".wfbin";
 
-WinterForge.NoAccessFilter = true;
+WinterForge.NoDefaultAccessFilters = true;
 LogDestinations.AddDestination(new ConsoleLogDestination());
 
 if (!File.Exists(CONFIG_FILE))

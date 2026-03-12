@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Title>WinterForgeCLICompiler</Title>
+        <Authors>WinterRose </Authors>
+        <PackAsTool>true</PackAsTool>
+        <ToolCommandName>wf</ToolCommandName>
+        <Description>A CLI based compiler for WF files (used for dotnet tools relying on the cli to do stuff)</Description>
+        <Copyright>WinterRose</Copyright>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <DebugType>none</DebugType>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\WinterRose-Development\WinterRose.Recordium\WinterRose.Recordium.csproj" />
+      <ProjectReference Include="..\..\WinterRose.WinterForge\src\WinterRose.WinterForge\WinterRose.WinterForge.csproj" />
+    </ItemGroup>
+
+</Project>
